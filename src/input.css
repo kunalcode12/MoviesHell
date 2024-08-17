@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+.search2 {
+  @apply animate-identifierio;
+  @apply animate-bounce;
+}
+body {
+  @apply animate-fade;
+}
+.opac {
+  @apply animate-opacity;
+}
+.menu {
+  @apply animate-fade;
+}
+.navSearch {
+  @apply animate-transition;
+}
+
+@tailwind utilities;

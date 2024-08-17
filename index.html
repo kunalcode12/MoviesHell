@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="input.css" />
+
+    <script type="module" defer src="index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" defer src="content.js"></script>
+    <script type="module" defer src="helper.js"></script>
+    <script type="module" defer src="paginationView.js"></script>
+    <script type="module" defer src="description.js"></script>
+  </head>
+  <body class="bg-black">
+    <header
+      class="headmain bg-white sticky h-[100px] md:h-[140px] w-full top-0 z-50 backdrop-blur-2xl"
+    >
+      <div class="allIcon flex flex-col md:flex-row md:justify-between">
+        <div class="flex items-center justify-around">
+          <span
+            class="boxIcon cursor-pointer md:hidden text-4xl font-bold border-[2px] p-1 border-black material-symbols-outlined"
+          >
+            menu
+          </span>
+          <div class="head m-8 cursor-pointer">
+            <span
+              class="hover:text-black text-4xl md:text-6xl font-bold border-[2px] shadow-[0_35px_60px_-15px_rgba(0.3,0.3,0.3,0.3)] shadow-black border-orange-300 bg-red-500"
+              >MOVIESHELL</span
+            >
+          </div>
+          <span
+            class="lg:hidden cursor-pointer serachIcon text-4xl font-extrabold p-1 material-symbols-outlined"
+          >
+            search
+          </span>
+        </div>
+        <div class="nav flex flex-row items-center gap-3">
+          <span class="navSearch1 hidden md:hidden lg:block top-0 z-50 p-2">
+            <input
+              type="text"
+              class="inp1 p-2 w-full lg:hover:w-80 transform transition-transform duration-300 text-white font-bold text-lg border border-gray-300 rounded-2xl bg-[rgba(25,34,71,1)] opacity-75"
+              placeholder="Search"
+            />
+          </span>
+
+          <h1
+            class="home hidden md:block p-2 font-bold text-xl text-gray-700 cursor-pointer hover:underline"
+          >
+            <a href=""> HOME</a>
+          </h1>
+          <h1
+            class="home ct hidden md:block p-2 md:mr-8 font-bold text-xl text-gray-700 cursor-pointer hover:underline"
+          >
+            CONTACT US
+          </h1>
+          <div class="menu hidden absolute top-20 right-[2%] w-80">
+            <div class="sub-menu bg-white p-12 m-3">
+              <div class="info flex flex-col space-y-3 c">
+                <h2 class="font-bold cursor-pointer hover:underline">
+                  To Contact:
+                </h2>
+                <h2
+                  class="font-normal cursor-pointer hover:text-red-600 hover:font-bold"
+                >
+                  Mail:Kunal818196@gmail.com
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxCon nav hidden md:hidden w-full bg-white relative">
+          <div class="flex flex-col justify-center items-center">
+            <h1
+              class="home p-2 font-bold text-xl cursor-pointer hover:underline"
+            >
+              <a href="">HOME</a>
+            </h1>
+            <h1
+              class="home ct p-2 font-bold text-xl cursor-pointer hover:underline"
+            >
+              CONTACT US
+            </h1>
+            <div class="menu absolute top-20 right-[2%] w-80">
+              <div class="sub-menu bg-white p-12 m-3">
+                <div class="info flex flex-col space-y-3 c">
+                  <h2 class="font-bold cursor-pointer hover:underline">
+                    To Contact:
+                  </h2>
+                  <h2
+                    class="font-normal cursor-pointer hover:text-red-600 hover:font-bold"
+                  >
+                    Mail:Kunal818196@gmail.com
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navSearch hidden">
+        <span class="navSearch flex md:flex-row-reverse lg:hidden mb-6">
+          <input
+            type="text"
+            class="inp1 p-2 w-full flex md:w-80 md:bg-black transform transition-transform duration-300 text-white font-bold text-lg border border-gray-300 rounded-2xl bg-[rgba(25,34,71,1)] opacity-75"
+            placeholder="Search"
+          />
+        </span>
+      </div>
+    </header>
+
+    <section class="sect flex flex-col space-y-6">
+      <!-- some end -->
+      <div
+        class="md:h-[110vh] h-[80vh] w-full bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/5ff265b6-3037-44b2-b071-e81750b21783/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_large.jpg')]"
+      >
+        <div
+          class="search relative p-8 mt-12 rounded-lg shadow-lg w-full top-32"
+        >
+          <div class="flex flex-col justify-center items-center space-y-4">
+            <span
+              class="md:text-6xl text-2xl font-extrabold text-center text-white"
+              >UNLIMITED MOVIES, FOR EVERYONE</span
+            >
+            <span class="text-2xl text-white font-bold">Watch Anywhere</span>
+            <span class="text-xl font-bold text-red-500">Search HERE!</span>
+          </div>
+          <div class="search1 flex justify-center mt-8">
+            <input
+              type="text"
+              class="inp md:w-1/2 w-full md:h-16 h-12 p-4 text-white font-bold text-lg border border-gray-300 rounded-lg bg-[rgba(25,34,71,1)] opacity-75"
+              placeholder="Search"
+            />
+          </div>
+          <div class="btn flex justify-center mt-4">
+            <button
+              class="btn bg-blue-500 text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-bold hover:bg-white hover:translate-y-2 hover:text-blue-600 transition duration-200"
+            >
+              SEARCH
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    /////////////////////////////////////////
+    <div class="reviews1"></div>
+    <main class="main">
+      <div class="cont1 bg-[#333131] m-10 rounded-xl space-y-4">
+        <hr />
+      </div>
+    </main>
+  </body>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Section 1 -->
+    <section class="main1">
+      <section
+        id="search-movies"
+        class="main1 py-16 flex flex-col items-center space-y-16"
+      >
+        <div class="m1 text-center bg-gray-700">
+          <div class="shimmer h-2 w-full bg-gray-700 mt-2"></div>
+          <div
+            class="flex flex-col md:flex-row md:p-40 p-10 md:gap-24 items-center"
+          >
+            <span class="fade-in-up md:w-1/2 w-full space-y-6">
+              <h1 class="d1 font-extrabold text-4xl md:text-6xl leading-tight">
+                Search Any Movies You Like
+              </h1>
+              <h3 class="d1 text-white font-light text-lg md:text-2xl">
+                Discover movies from all genres, eras, and languages. Use our
+                search tool to find exactly what you're looking for, whether
+                it's a timeless classic or the latest blockbuster. Dive into the
+                world of cinema and uncover hidden gems.
+              </h3>
+            </span>
+            <span class="img16 md:w-1/2 p-4 pulse-effect">
+              <img
+                class="rounded-lg shadow-white shadow-2xl transition-transform transform hover:scale-105"
+                src="https://media.istockphoto.com/id/1369011740/photo/portrait-of-smiling-arab-man-using-smartphone-at-home.webp?b=1&s=170667a&w=0&k=20&c=Jr3e_BNBBCzkPP4b_xNOBOE02m7I5mBV8oHUeEbZMlg="
+                alt="Man using smartphone"
+              />
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section
+        id="movie-reviews"
+        class="main1 py-16 bg-gray-800 flex flex-col items-center space-y-16"
+      >
+        <div class="m1 text-center">
+          <div class="shimmer h-2 w-full bg-gray-700 mt-2"></div>
+          <div
+            class="flex flex-col md:flex-row-reverse md:p-40 p-10 md:gap-24 items-center"
+          >
+            <span class="fade-in-up-delay md:w-1/2 w-full space-y-6">
+              <h1 class="d1 font-extrabold text-4xl md:text-6xl leading-tight">
+                Watch Reviews of the Movies
+              </h1>
+              <h3 class="d1 text-white font-light text-lg md:text-2xl">
+                Get insights from professional critics and audience reviews
+                before watching a movie. Our platform offers comprehensive
+                reviews, ratings, and recommendations to help you make an
+                informed decision on what to watch next.
+              </h3>
+              <div class="flex justify-center">
+                <button
+                  class="revBtn bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300"
+                >
+                  View Reviews
+                </button>
+              </div>
+            </span>
+            <span class="img16 md:w-1/2 p-4 pulse-effect">
+              <img
+                class="rounded-lg shadow-gray-600 shadow-2xl transition-transform transform hover:scale-105"
+                src="https://www.careersinfilm.com/wp-content/uploads/2020/07/how-to-write-a-movie-review.jpg"
+                alt="Writing movie review"
+              />
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section
+        id="watch-trailers"
+        class="main1 py-16 bg-gray-700 flex flex-col items-center space-y-16"
+      >
+        <div class="m1 text-center">
+          <div class="shimmer h-2 w-full bg-gray-700 mt-2"></div>
+          <div
+            class="flex flex-col md:flex-row md:p-40 p-10 md:gap-24 items-center"
+          >
+            <span class="fade-in-up md:w-1/2 w-full space-y-6">
+              <h1 class="d1 font-extrabold text-4xl md:text-6xl leading-tight">
+                Watch Movie Trailers and More
+              </h1>
+              <h3 class="d1 text-white font-light text-lg md:text-2xl">
+                Explore movie trailers, behind-the-scenes footage, and exclusive
+                interviews with the cast and crew. Stay updated with the latest
+                in the movie world, and get a sneak peek at upcoming releases
+                and events.
+              </h3>
+              <div class="flex justify-center">
+                <button
+                  class="revBtn bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300"
+                >
+                  Watch Trailers
+                </button>
+              </div>
+            </span>
+            <span class="img16 md:w-1/2 p-4 pulse-effect">
+              <img
+                class="rounded-lg shadow-white shadow-2xl transition-transform transform hover:scale-105"
+                src="https://media.istockphoto.com/id/1363352866/photo/friends-enjoying-a-comedy-movie-at-the-cinema.jpg?s=612x612&w=0&k=20&c=j95E4hnsXQ2OEtNfJx9ct2t1bo8mTvYwW2hicZVYl9Q="
+                alt="Friends enjoying a movie"
+              />
+            </span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="foot bg-gray-900">
+      <div class="flex justify-center">
+        <div class="head m-6 mt-4 cursor-pointer">
+          <span class="text-white text-6xl font-bold">MOVIESHELL</span>
+        </div>
+      </div>
+      <div>
+        <ul class="flex justify-center gap-3 pb-8">
+          <li
+            class="text-white font-bold hover:text-yellow-500 hover:underline cursor-pointer"
+          >
+            Contact us
+          </li>
+          <li
+            class="text-white font-bold hover:text-yellow-500 hover:underline cursor-pointer"
+          >
+            Request Us
+          </li>
+          <li
+            class="text-white font-bold hover:text-yellow-500 hover:underline cursor-pointer"
+          >
+            DMCA
+          </li>
+          <li
+            class="text-white font-bold hover:text-yellow-500 hover:underline cursor-pointer"
+          >
+            About Us
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
